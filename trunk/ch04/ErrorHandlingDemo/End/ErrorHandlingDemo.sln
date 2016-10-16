@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandlingDemo", "ErrorHandlingDemo\ErrorHandlingDemo.csproj", "{A90025A3-5970-4707-83A9-2B90937E8796}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C472DFAD-A6F0-4D13-A117-D3B5298D2F11} = {C472DFAD-A6F0-4D13-A117-D3B5298D2F11}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService", "CalculatorService\CalculatorService.csproj", "{C472DFAD-A6F0-4D13-A117-D3B5298D2F11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A90025A3-5970-4707-83A9-2B90937E8796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90025A3-5970-4707-83A9-2B90937E8796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90025A3-5970-4707-83A9-2B90937E8796}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A90025A3-5970-4707-83A9-2B90937E8796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90025A3-5970-4707-83A9-2B90937E8796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90025A3-5970-4707-83A9-2B90937E8796}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C472DFAD-A6F0-4D13-A117-D3B5298D2F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C472DFAD-A6F0-4D13-A117-D3B5298D2F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C472DFAD-A6F0-4D13-A117-D3B5298D2F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C472DFAD-A6F0-4D13-A117-D3B5298D2F11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

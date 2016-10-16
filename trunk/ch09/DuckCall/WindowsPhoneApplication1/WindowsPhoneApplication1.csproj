@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B1A8743-8D55-4BE2-8E48-96458C13D8EB}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsPhoneApplication1</RootNamespace>
+    <AssemblyName>WindowsPhoneApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>WindowsPhoneApplication1.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>WindowsPhoneApplication1.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.1.20618.30</ExpressionBlendVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.7.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity, Version=3.7.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sandbox.xaml.cs">
+      <DependentUpon>Sandbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucDuckCallerHeader.xaml.cs">
+      <DependentUpon>ucDuckCallerHeader.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="DuckAppResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sandbox.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucDuckCallerHeader.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="basic_quack.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="comeback_call.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="feeding_call.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="greeting_call.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hail_call.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lonesome_hen.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pleading_call.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DuckCallerForWeb_Images\Image.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image1.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image10.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image11.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image12.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image13.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image14.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image15.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image16.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image17.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image18.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image19.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image2.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image20.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image21.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image22.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image23.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image24.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image25.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image26.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image27.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image28.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image29.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image3.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image30.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image31.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image32.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image33.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image34.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image35.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image36.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image37.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image38.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image39.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image4.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image40.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image41.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image42.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image43.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image44.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image45.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image46.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image47.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image48.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image49.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image5.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image50.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image51.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image52.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image53.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image54.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image55.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image56.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image57.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image58.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image59.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image6.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image60.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image7.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image8.png" />
+    <Resource Include="DuckCallerForWeb_Images\Image9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

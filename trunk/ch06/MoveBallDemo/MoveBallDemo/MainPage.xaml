@@ -1,0 +1,47 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MoveBallDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="24,24,0,12">
+            <TextBlock x:Name="ApplicationTitle" Text="MoveBallDemo" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+        <Button Content="Start" Height="72" 
+                HorizontalAlignment="Left" x:Name="btnStart" 
+                VerticalAlignment="Top" Width="160" 
+                Click="btnStart_Click" Margin="8,537,0,0" 
+                Grid.Row="1" d:LayoutOverrides="HorizontalAlignment" />
+        <Button Content="Stop" Height="72" 
+                HorizontalAlignment="Left" x:Name="btnStop" 
+                VerticalAlignment="Top" Width="160" 
+                Click="btnStop_Click" Margin="168,537,0,0" 
+                Grid.Row="1" />
+
+        <Canvas x:Name="ContentGrid" Margin="0,8,8,0" 
+                Grid.Row="1" HorizontalAlignment="Right" 
+                Width="472" Height="479" VerticalAlignment="Top">
+            <Ellipse x:Name="ball" Canvas.Left="126" 
+                     Fill="#FF963C3C" HorizontalAlignment="Left" 
+                     Height="47" Stroke="Black" StrokeThickness="1" 
+                     VerticalAlignment="Top" Width="46" 
+                     Canvas.Top="222"/>
+        </Canvas>
+    </Grid>
+    
+</phone:PhoneApplicationPage>

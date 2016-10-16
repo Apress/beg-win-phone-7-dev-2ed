@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveBallDemo", "MoveBallDemo\MoveBallDemo.csproj", "{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7F9CC5-5178-40B2-B6F8-A1B74677E30B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="CurrencyConvertorSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://www.webservicex.net/CurrencyConvertor.asmx"
+                binding="basicHttpBinding" bindingConfiguration="CurrencyConvertorSoap"
+                contract="svcCurrencyConverter.CurrencyConvertorSoap" name="CurrencyConvertorSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

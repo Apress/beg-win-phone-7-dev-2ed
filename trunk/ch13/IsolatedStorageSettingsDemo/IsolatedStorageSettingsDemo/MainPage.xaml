@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="IsolatedStorageSettingsDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitleGrid is the name of the application and page title-->
+        <Grid x:Name="TitleGrid" Grid.Row="0">
+            <TextBlock Text="Isolated Storage Settings Demo" 
+                       x:Name="textBlockListTitle" 
+                       Style="{StaticResource PhoneTextTitle1Style}" 
+                       FontSize="30" />
+        </Grid>
+
+        <!--ContentGrid is empty. Place new content here-->
+        <Grid x:Name="ContentGrid" Grid.Row="1">
+            <TextBox Height="72" HorizontalAlignment="Left" 
+                     Margin="172,46,0,0" Name="txtKey" Text="" 
+                     VerticalAlignment="Top" Width="212" />
+            <Button Content="Save" Height="70" 
+                    HorizontalAlignment="Left" Margin="78,228,0,0" 
+                    Name="btnSave" VerticalAlignment="Top" Width="160" 
+                    Click="btnSave_Click" />
+            <ListBox Height="301" HorizontalAlignment="Left" Margin="94,392,0,0" 
+                     Name="lstKeys" VerticalAlignment="Top" Width="290" BorderBrush="White"
+                     BorderThickness="1" SelectionChanged="lstKeys_SelectionChanged" />
+            <TextBlock Height="39" HorizontalAlignment="Left" Margin="94,62,0,0" 
+                       Name="lblKey" Text="Key" VerticalAlignment="Top" />
+            <TextBox Height="74" HorizontalAlignment="Left" Margin="172,124,0,0" 
+                     Name="txtValue" Text="" VerticalAlignment="Top" Width="212" />
+            <TextBlock Height="39" HorizontalAlignment="Left" Margin="94,140,0,0" 
+                       Name="lblValue" Text="Value" VerticalAlignment="Top" />
+            <Button Content="Delete" Height="70" HorizontalAlignment="Left" 
+                    Margin="224,228,0,0" Name="btnDelete" VerticalAlignment="Top" 
+                    Width="160" Click="btnDelete_Click" />
+            <TextBlock Height="39" HorizontalAlignment="Left" Margin="94,347,0,0" 
+                       Name="lblListOfKeys" Text="List of Keys" VerticalAlignment="Top" />
+        </Grid>
+    </Grid>
+    
+</phone:PhoneApplicationPage>
